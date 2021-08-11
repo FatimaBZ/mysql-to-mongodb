@@ -1,26 +1,26 @@
-Database Project
+Database Project:
 Menu-driven program to extract data from relational database and load three different documents into the MongoDB 
 
-Data Structures 
+Data Structures: 
 1. List
 2. HashMap
 
-Relational Database 
+Relational Database :
 MySQL
 
-MySQL GUI
+MySQL GUI :
 MySQL Workbench
 
-MongoDB GUI 
+MongoDB GUI :
 MongoDB Compass
 
-Programming language
+Programming language:
 Java
 
-IDE
+IDE:
 IntelliJ IDEA Community Edition
 
-POJOs
+POJOs:
 1.For creating PROJECT object (document) that will include each employee
 Project.java
 EmployeeList.java
