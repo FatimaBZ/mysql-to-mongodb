@@ -21,15 +21,18 @@ IDE:
 IntelliJ IDEA Community Edition
 
 POJOs:
-1.For creating PROJECT object (document) that will include each employee
+1.For creating PROJECT object (document) that will include each employee;
+
 Project.java
 EmployeeList.java
 
-2.For creating Employee object (document) that will include project each one worked on
+2.For creating Employee object (document) that will include project each one worked on:
+
 Employee.java
 ProjectList.java
 
-3.For creating Department object (document) that will include collection of the employees who work for that department
+3.For creating Department object (document) that will include collection of the employees who work for that department:
+
 Department.java
 DepartmentList.java
 
