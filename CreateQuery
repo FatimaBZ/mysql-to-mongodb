@@ -1,0 +1,45 @@
+CREATE TABLE COMPANY.EMPLOYEE
+(
+Fname VARCHAR(15) NOT NULL,
+Minit CHAR,
+Lname VARCHAR(15) NOT NULL,
+Ssn CHAR(9)
+Bdate DATE,
+Address VARCHAR(30),
+Sex CHAR,
+Salary DECIMAL(10,2),
+Super_ssn CHAR(9),
+Dno INT            NOT NULL,
+PRIMARY KEY (Ssn)
+);
+
+
+---------------------------------------------------------------------------------
+CREATE TABLE COMPANY.DEPARTMENT
+( Dname VARCHAR(15) NOT NULL,
+Dnumber INT NOT NULL,
+Mgr_ssn CHAR(9) NOT NULL,
+Mgr_start_date DATE,
+PRIMARY KEY (Dnumber),
+UNIQUE (Dname),
+FOREIGN KEY (Mgr_ssn) REFERENCES EMPLOYEE(Ssn) );
+
+----------------------------------------------------------------------------------
+
+CREATE TABLE COMPANY.PROJECT
+( Pname   VARCHAR(15)   NOT NULL,
+Pnumber   INT           NOT NULL,
+Plocation VARCHAR(15) ,
+Dnum      INT           NOT NULL,
+PRIMARY KEY (Pnumber),
+UNIQUE (Pname),
+FOREIGN KEY (Dnum) REFERENCES DEPARTMENT(Dnumber));
+
+----------------------------------------------------------------------------------------
+CREATE TABLE COMPANY.WORKS_ON
+( Essn CHAR(9) NOT NULL,
+Pno INT NOT NULL,
+Hours DECIMAL(3,1) NOT NULL,
+PRIMARY KEY (Essn, Pno),
+FOREIGN KEY (Essn) REFERENCES EMPLOYEE(Ssn), FOREIGN KEY (Pno) REFERENCES PROJECT(Pnumber) );
+
