@@ -36,5 +36,6 @@ ProjectList.java
 Department.java
 DepartmentList.java
 
+Main Class inside ProgramMain.java
 
 For JAR files go here https://github.com/FatimaBZ/database-jar-files
